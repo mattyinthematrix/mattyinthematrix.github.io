@@ -1,0 +1,42 @@
+body {
+    background: radial-gradient(circle, #F09819 0%, #EDDE5D 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', monospace;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    text-align: center;
+    animation: spin 5s infinite linear;
+}
+
+.content {
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.name {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px #000000;
+    animation: colorchange 2s infinite;
+}
+
+@keyframes colorchange {
+    0% { color: #f44336; }
+    25% { color: #3f51b5; }
+    50% { color: #4caf50; }
+    75% { color: #ffeb3b; }
+    100% { color: #f44336; }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
